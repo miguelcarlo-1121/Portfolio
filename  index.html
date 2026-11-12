@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miguel Carlo Tapalla | Full-Stack Developer and UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Miguel Carlo Tapalla, a full-stack developer and UI/UX designer who takes products from Figma prototype to responsive, working code.">
+  <meta name="theme-color" content="#F4F6FA">
+  <meta property="og:title" content="Miguel Carlo Tapalla | Full-Stack Developer and UI/UX Designer">
+  <meta property="og:description" content="From Figma prototype to live, responsive code. Projects, skills and experience.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232B50F0'/%3E%3Ctext x='16' y='22' font-size='15' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EMT%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    /* Set the theme before first paint to avoid a flash */
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Miguel Carlo Tapalla, home">MT</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>
+            <span class="line">Miguel Carlo</span>
+            <span class="line">Tapalla</span>
+          </h1>
+          <p class="role">Full-Stack Developer and UI/UX Designer</p>
+          <p class="lead">I design in Figma, then build the product end to end, from responsive front ends in HTML, CSS, JavaScript and React to Laravel back ends, so what ships matches what was designed.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="resume/Miguel_Tapalla_Resume_2026.pdf" download>Download resume</a>
+          </div>
+        </div>
+
+        <figure class="portrait" id="portrait">
+          <img src="images/profile.jpg" alt="Portrait of Miguel Carlo Tapalla" width="480" height="600" data-fallback>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-head">
+          <h2>About me</h2>
+        </div>
+        <div class="prose">
+          <p>I’m a third-year Computer Science student at the University of Makati and a Dean’s List student. I work across the whole product: I design the flows and screens in Figma, build the front end, and connect it to the back end. Alongside my studies, I work part time as a UI/UX designer and prompt developer.</p>
+          <p>My internship at JEM 8 Circle Trading Co. gave me a full project to carry from prototype to working code. Most recently I worked with my team on an appointment system for Threefold Psychological Services, built with React and Laravel.</p>
+          <p>Alongside my studies, I work part time as a UI/UX designer and prompt developer.</p>
+          <p>I care about layouts that hold up on every screen size, interfaces that are easy to use the first time, and clean version control history.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>A mix of client, team and academic work.</p>
+        </div>
+
+        <article class="project featured">
+          <div class="shot" data-label="TPS">
+            <img src="images/projects/tps.png" alt="Screenshot of the Threefold appointment management system" loading="lazy" data-fallback>
+          </div>
+          <div class="project-body">
+            <h3>Threefold Psychological Services Appointment Management System</h3>
+            <p class="meta">Team Falcon. I served as Project Manager and Systems Analyst.</p>
+            <p>A web platform that replaces Facebook-based booking for a psychological services clinic. Clients choose a service and time, pay, and keep their appointment records in one place, while psychologists and admins manage schedules, payments and history.</p>
+            <p>The scheduling engine is a separate Python service that uses integer linear programming to assign admin psychologists with the fewest changes to existing bookings, and suggests the nearest open times when a slot is taken.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li><li>Laravel</li><li>MySQL</li><li>FastAPI</li><li>Laravel Sanctum</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/miguelcarlo-1121/TPS-Frontend" target="_blank" rel="noopener">Front-end repository</a>
+              <a href="https://github.com/miguelcarlo-1121/TPS-Backend" target="_blank" rel="noopener">Back-end repository</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="shot" data-label="JEM 8">
+              <img src="images/projects/jem8.png" alt="Screenshot of the JEM 8 Circle Trading e-commerce ordering system" loading="lazy" data-fallback>
+            </div>
+            <div class="project-body">
+              <h3>JEM 8 Circle Trading Co. E-Commerce Ordering System</h3>
+              <p class="meta">Internship project, 2026. Sole designer and front-end developer.</p>
+              <p>A client-facing system with product management, an ordering workflow and account navigation. I designed every screen in Figma first, then built it as responsive code for desktop and mobile. The automated cart and order management cut manual order processing time by 60%.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Figma</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/miguelcarlo-1121/Jem8TradingCo-FrontEnd" target="_blank" rel="noopener">Front-end repository</a>
+                <a href="https://github.com/miguelcarlo-1121/Jem8TradingCo-BackEnd" target="_blank" rel="noopener">Back-end repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="shot" data-label="UMAKFIT">
+              <img src="images/projects/umakfit.png" alt="Screenshot of the UMAKFIT fitness tracker dashboard" loading="lazy" data-fallback>
+            </div>
+            <div class="project-body">
+              <h3>UMAKFIT Fitness Tracker</h3>
+              <p class="meta">Group project, University of Makati.</p>
+              <p>A cross-platform fitness app for students. I built the responsive dashboard and worked on the UI design, then ran QA testing across the main user flows before submission. The dashboard improved activity tracking engagement by 90%.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Responsive UI</li><li>Dashboard design</li><li>QA testing</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/miguelcarlo-1121/umakfit-chk-department" target="_blank" rel="noopener">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="shot" data-label="Hungry Potter">
+              <img src="images/projects/hungry-potter.png" alt="Screenshot of the Hungry Potter food ordering website" loading="lazy" data-fallback>
+            </div>
+            <div class="project-body">
+              <h3>Hungry Potter Food Ordering Website</h3>
+              <p class="meta">Group project, University of Makati. I led the UI/UX and front end.</p>
+              <p>A food ordering platform with live menu browsing, cart management and an order summary showing items, quantities and totals. It covers the full path from choosing a product to order confirmation.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>UI/UX design</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Design, front end and the services behind it.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Design and UI/UX</h3>
+            <ul>
+              <li>Figma: wireframing, prototyping, design systems</li>
+              <li>Responsive and mobile-first UI design</li>
+              <li>User flow design and basic usability testing</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Front-end development</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>React</li>
+              <li>Responsive layouts and cross-device testing</li>
+              <li>Git, GitHub, Visual Studio Code</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Back end and services</h3>
+            <ul>
+              <li>Laravel and REST APIs</li>
+              <li>MySQL and basic database management</li>
+              <li>AWS Cognito for authentication and user management</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools and practice</h3>
+            <ul>
+              <li>Prompt development</li>
+              <li>Software testing and QA</li>
+              <li>System maintenance and technical support</li>
+              <li>Slack, Google Sheets, Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="when">2026</p>
+            <div class="what">
+              <h3>UI/UX Designer and Front-End Developer Intern</h3>
+              <p class="where">JEM 8 Circle Trading Co.</p>
+              <ul>
+                <li>Built a full e-commerce platform with an automated cart and management system, reducing manual order processing time by 60%.</li>
+                <li>Developed a mobile-first UI component library with 90% layout consistency across 3+ breakpoints, improving mobile navigation speed.</li>
+                <li>Created and maintained Figma wireframes, prototypes and final UI specs for the development team.</li>
+                <li>Kept a clean commit history across every iteration using Git and GitHub.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="when">2022</p>
+            <div class="what">
+              <h3>SPES Administrative Intern</h3>
+              <p class="where">Makati City Hall</p>
+              <ul>
+                <li>Encoded and organized government records accurately, following strict confidentiality protocols.</li>
+                <li>Streamlined daily filing workflows, reducing manual processing time for office staff.</li>
+                <li>Delivered consistent quality across a 3-month placement in a deadline-driven office.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="when">2021 to 2022</p>
+            <div class="what">
+              <h3>Graphic Designer and Production Staff</h3>
+              <p class="where">DRIHT Printing, West Rembo, Taguig City</p>
+              <ul>
+                <li>Designed and produced tarpaulins, posters, IDs and business cards for multiple clients at once, with 24-hour turnaround on revisions.</li>
+                <li>Worked directly with clients to refine designs and meet branding specs, often finishing revisions the same day.</li>
+                <li>Built multitasking and precision habits running production hardware and design software under tight deadlines.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p class="where">University of Makati</p>
+            <p class="when-sm">3rd year, in progress</p>
+          </article>
+          <article class="edu">
+            <h3>Diploma in Application Development</h3>
+            <p class="where">University of Makati</p>
+            <p class="when-sm">2023 to 2026, Dean’s List</p>
+          </article>
+          <article class="edu">
+            <h3>Senior High School, HUMSS</h3>
+            <p class="where">ACLC Guadalupe</p>
+            <p class="when-sm">2019 to 2021, graduated with honors</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-box">
+        <div>
+          <h2>Let’s work together</h2>
+          <p>I’m looking for opportunities where I can design and build interfaces people enjoy using. The quickest way to reach me is by email.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:miguelcarlo11212003@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/miguel-carlo-tapalla-05606a431/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/miguelcarlo-1121" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year">2026</span> Miguel Carlo Tapalla</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
